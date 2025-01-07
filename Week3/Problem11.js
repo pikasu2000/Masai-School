@@ -1,25 +1,24 @@
-function arrPrintByRow(Row,Column){
-    
-    let arr = []
-    let count=1
-    for(let i = 0;i<Row;i++){
+function SumOfIndex(N,M){
+    let arr= []
+    let val=1;
+    for(let i=0;i<N;i++){
         arr[i]=[]
-        for(let j=0;j<Column;j++){
-            arr[i][j]=count++
-        }    
-    }
-    // console.log(arr);
-    for(let i=0;i<arr.length;i++){
-        let bag =""
-        for(let j=0;j<arr.length-1;j++){
-            bag = bag + arr[i][j] + " "
+        for(let j=0;j<M;j++){
+            arr[i][j]=val++
         }
-        console.log(bag)
     }
+
+    let sum=0
+    for(let i=0;i<arr.length;i++){
+        for(let j=0;j<=arr.length;j++){
+            sum+=arr[i][j]
+        }
+    }
+    console.log(sum)
+    
 
 }
+let N =2
+let M=3
 
-let N = 3
-let M = 2
-
-arrPrintByRow(N,M)
+SumOfIndex(N,M)
