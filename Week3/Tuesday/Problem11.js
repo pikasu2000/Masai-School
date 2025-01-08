@@ -11,7 +11,7 @@ function arrPrintByRow(Row,Column){
 
     for(let i=0;i<arr.length;i++){
         let bag =""
-        for(let j=0;j<arr.length-1;j++){
+        for(let j=0;j<arr[i].length-1;j++){
             bag = bag + arr[i][j] + " "
         }
         console.log(bag)
