@@ -12,14 +12,19 @@ function CircularTraversal(Rows,Columns){
     let bag = ""
     for(let i=arr.length-1;i>=0;i--){
         // console.log(arr[i])
-        for(let j=0;j<arr.length;j++){
-            
-            if(i==0||i==arr.length-1||j==0||j==arr.length-1){
-                bag+=arr[i][j]
-            }
-        }
+
+                bag+=arr[i][0]
+
     }
-                console.log(bag)
+    for(let j =1;j<arr.length;j++){
+      bag+=arr[0][j]
+    }
+    for(let k =1;k<arr.length;k++){
+      bag+=arr[k][2]
+    }
+      bag+=arr[2][1]
+    
+    console.log(bag)
 }
 
 
