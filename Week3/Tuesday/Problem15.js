@@ -16,7 +16,15 @@ function CircularTraversal(Rows,Columns){
                 bag+=arr[i][0]
 
     }
-
+    for(let j =1;j<arr.length;j++){
+      bag+=arr[0][j]
+    }
+    for(let k =1;k<arr.length;k++){
+      bag+=arr[k][2]
+    }
+      bag+=arr[2][1]
+    
+    console.log(bag)
 }
 
 
